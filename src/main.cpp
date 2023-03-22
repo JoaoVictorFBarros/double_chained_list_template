@@ -2,39 +2,50 @@
 #include "list.hpp"
 
 template <typename T>
-void printlist(list<T> l){
+void printlist(list<T> l)
+{
 
-    std::cout<<"[";
+    std::cout << "[";
 
-    for (int i=0;i<l.objectcounter;i++){
-       std::cout<<l[i];
+    for (int i = 0; i < l.objectcounter; i++)
+    {
+        std::cout << l[i];
 
-       if(i < l.objectcounter -1){
-        std::cout<<" ";
-       }
+        if (i < l.objectcounter - 1)
+        {
+            std::cout << " ";
+        }
     }
 
-    std::cout<<"]";
+    std::cout << "]";
 }
 
-int main(){
-    list<int> l;
-    l.insert(10,0);
-    l.insert(11,1);
-    l.insert(12,2);
-    l.insert(13,3);
-    l.insert(14,4);
-    l.insert(15,5);
-    l.insert(16,0);
-    l.insert(17,-1);
+int main()
+{
+    std::cout<<"\n\n_________________________Starting_________________________\n\n";
 
-    list<std::string> l2;
-    l2.insert("Templates",0);
-    l2.insert("are",1);
-    l2.insert("cool",2);
 
-    printlist(l);
-    printlist(l);
+    list<std::string> popularprograminglanguages;
 
+    popularprograminglanguages.insert("JavaScript",0);
+    popularprograminglanguages.insert("HTML/CSS",1);
+    popularprograminglanguages.insert("SQL",2);
+    popularprograminglanguages.insert("Python",3);
+    popularprograminglanguages.insert("TypeScript",4);
+    popularprograminglanguages.insert("Java",5);
+    popularprograminglanguages.insert("Bash/Shell",6);
+    popularprograminglanguages.insert("C#",7);
+    popularprograminglanguages.insert("C++",8);
+    popularprograminglanguages.insert("PHP",9);
+
+    std::cout<<" - 10 most popular programming, scripting, and markup languages on stackoverflow 2022: ";
+    printlist(popularprograminglanguages);
+
+    std::cout<<"\n\n - Removing HTML/CSS since they are not programing languages                         : ";
+    popularprograminglanguages.remove(1);
+    printlist(popularprograminglanguages);
+
+
+    std::cout<<"\n\n__________________________________________________________\n\n\n";
     return 0;
 }

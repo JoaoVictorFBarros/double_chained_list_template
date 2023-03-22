@@ -1,6 +1,5 @@
 #ifndef LIST_HPP
 #define LIST_HPP
-#include <iostream>
 
 template <typename T>
 struct node
@@ -16,6 +15,7 @@ class list
 private:
     node<T> *root;
     node<T> *edge;
+
 public:
     int objectcounter;
     list();
