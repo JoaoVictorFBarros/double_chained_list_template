@@ -77,7 +77,7 @@ A função printlist criada em [main.cpp](src/main.cpp) recebe como parâmetro u
 
 ## Execução 
 
-A fim de testar as funcionalidades do template list foi criada na [função main](src/main.cpp) uma lista do tipo list<std::string>, na qual foram adicionadas as 10 linguagens de programação mais populares do stackoverflow survey 2022, assim validando o método de inserção. Após isso a lista é impressa, validando o método de pesquisa (operator []), e por fim um dos elementos da mesma é removido, validando o método de remoção. A lista modificada é impressa novamente. 
+A fim de testar as funcionalidades do template list foi criada na [função main](src/main.cpp) uma lista do tipo list\<std::string\>, na qual foram adicionadas as 10 linguagens de programação mais populares do stackoverflow survey 2022, assim validando o método de inserção. Após isso a lista é impressa, validando o método de pesquisa (operator []), e por fim um dos elementos da mesma é removido, validando o método de remoção. A lista modificada é impressa novamente. 
 
 Resultado: 
 
